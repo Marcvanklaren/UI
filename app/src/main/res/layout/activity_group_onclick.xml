@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.gerwindekruijf.ui.GroupOnclick">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/bar_groupOnclick">
+
+        <Button
+            android:text="@string/xButton"
+            android:layout_width="77dp"
+            android:id="@+id/btn_goback2Group"
+            tools:text="X"
+            android:textSize="24sp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="61dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_group_onclick" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/tlb_groupOnclick"
+        android:layout_weight="1"
+        android:layout_marginLeft="80dp"
+        app:title="GroupnameHere"
+        tools:ignore="RtlHardcoded" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/lst_GroupTasks" />
+
+</android.support.design.widget.CoordinatorLayout>
